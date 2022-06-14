@@ -11,13 +11,13 @@ body {
     background-size: cover;
     background-position: top center;
     height: 100vh;
-    
+    background-color: #e2181b;
 }
 
 .heading {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 h1 {
@@ -25,11 +25,14 @@ h1 {
     background-color: rgba(251,248,249, 0.9);
     padding: 20px;
     border: 3px solid black;
+    text-align: center;
 }
 
 button {
     margin-left: 100px;
+    padding: 0 30px;
     border: 3px solid black;
+    opacity: 0.8;
 }
 
 
@@ -37,6 +40,7 @@ button {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-top: 100px;
 }
 
 .christmas {
@@ -75,14 +79,61 @@ h3 {
 
 
 @media all and (max-width: 800px) {
+
+    .heading {
+        flex-direction: column;
+        margin: 50px;
+    }
+
     h1 {
         font-size: 40px;
+        margin-bottom: 50px;
     }
+
+    button {
+        margin: 0 auto;
+        width: 150px;
+    }
+
+    .container {
+        margin-top: 0px;
+    }
+
 }
 
 @media all and (max-width: 500px) {
+
+
+    body {
+        height: 150vh;
+    }
+
     h1 {
         font-size: 25px;
+    }
+
+    button {
+        margin: 0 auto;
+        width: 150px;
+        padding: 0;
+    }
+
+    .christmas {
+        height: 150px;
+        width: 150px;
+    }
+
+    .block {
+        margin-top: 20px;
+    }
+
+    h3 {
+        font-size: 20px;
+
+    }
+    
+    .days, .hours, .minutes, .seconds {
+        font-size: 40px;
     }
 
 }
