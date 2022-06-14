@@ -52,3 +52,7 @@ h3 {
     font-size: 30px;
     font-weight: 400;
 }
+
+.days, .hours, .minutes, .seconds {
+    font-size: 40px;
+}

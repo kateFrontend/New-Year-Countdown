@@ -20,9 +20,26 @@ function christmasCountdown() {
     const displaySecond = Math.floor((diff%msInMinute) / msInSecond);
     document.querySelector(".seconds").textContent = displaySecond;
 
+    if (diff <= 0) {
+        document.querySelector(".days").textContent = 0;
+        document.querySelector(".hours").textContent = 0;
+        document.querySelector(".minutes").textContent = 0;
+        document.querySelector(".seconds").textContent = 0;
+        clearInterval(timerID) // stop function
+    }
 
+    
 }
 
-setInterval(christmasCountdown, 1000)
+let timerID = setInterval(christmasCountdown, 1000);
 
-christmasCountdown();
+function merryChristmas() {
+    const heading = document.querySelector("h1");
+    heading.textContent = "MERRY CHRISTMAS!!! HO-HO-HO!";
+    heading.classList.add("red");
+}
+
+const button = document.querySelector("#myButton");
+button.addEventListener("click", function() {
+document.querySelector("#myAudio").play();
+})
