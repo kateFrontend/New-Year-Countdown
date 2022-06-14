@@ -8,8 +8,21 @@ function christmasCountdown() {
     const msInHour = 60 *60 *1000; // how many milliseconds in one hour - 3 600 000
     const msInDay = 24 * 60 * 60 * 1000; // how many milliseconds in one day - 86 400 000
 
-    const displayDay = diff/
+    const displayDay = Math.floor(diff/msInDay); // round up a number
+    document.querySelector(".days").textContent = displayDay;
+
+    const displayHour = Math.floor((diff%msInDay) / msInHour);
+    document.querySelector(".hours").textContent = displayHour;
+
+    const displayMinute = Math.floor((diff%msInHour) / msInMinute);
+    document.querySelector(".minutes").textContent = displayMinute;
+
+    const displaySecond = Math.floor((diff%msInMinute) / msInSecond);
+    document.querySelector(".seconds").textContent = displaySecond;
+
 
 }
+
+setInterval(christmasCountdown, 1000)
 
 christmasCountdown();
