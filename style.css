@@ -17,15 +17,21 @@ body {
 .heading {
     display: flex;
     justify-content: center;
+    margin-top: 50px;
 }
 
 h1 {
     font-size: 60px;
     background-color: rgba(251,248,249, 0.9);
     padding: 20px;
-    margin-top: 50px;
     border: 3px solid black;
 }
+
+button {
+    margin-left: 100px;
+    border: 3px solid black;
+}
+
 
 .container {
     display: flex;
@@ -35,7 +41,7 @@ h1 {
 
 .christmas {
     background-color: rgba(251, 248, 249, 0.82); 
-    height: 300px;
+    height: 250px;
     width: 200px;
     margin-top: 50px;
     border: 3px solid black;
@@ -54,5 +60,29 @@ h3 {
 }
 
 .days, .hours, .minutes, .seconds {
-    font-size: 40px;
+    font-size: 60px;
+}
+
+
+.red {
+    font-size: 60px;
+    border: none;
+    font-family: 'Staatliches', cursive;
+    color: red;
+}
+
+
+
+
+@media all and (max-width: 800px) {
+    h1 {
+        font-size: 40px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    h1 {
+        font-size: 25px;
+    }
+
 }
