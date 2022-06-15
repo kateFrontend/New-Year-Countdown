@@ -14,6 +14,32 @@ body {
     background-color: #e2181b;
 }
 
+
+button {
+    margin-left: 100px;
+    border: 3px solid black;
+    opacity: 0.8;
+    width: 150px;
+}
+
+.play {
+    background-image: url(https://img.icons8.com/ios-filled/452/play-button-circled--v1.png);
+    background-size:50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pause {
+    background-image: url(https://img.icons8.com/windows/344/circled-pause.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+
 #particles-js {
     position: absolute;
     margin-top: -100px;    
@@ -36,12 +62,7 @@ h1 {
     text-align: center;
 }
 
-button {
-    margin-left: 100px;
-    padding: 0 30px;
-    border: 3px solid black;
-    opacity: 0.8;
-}
+
 
 
 .container {
@@ -100,8 +121,7 @@ h3 {
 
     button {
         margin: 0 auto;
-        width: 150px;
-        padding: 0;
+        padding: 50px;
     }
 
     .container {
@@ -117,15 +137,14 @@ h3 {
         height: 150vh;
     }
 
+    button {
+        width: 50px;
+    }
+
     h1 {
         font-size: 25px;
     }
 
-    button {
-        margin: 0 auto;
-        width: 150px;
-        padding: 0;
-    }
 
     .christmas {
         height: 150px;

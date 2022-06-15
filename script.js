@@ -39,10 +39,31 @@ function merryChristmas() {
     heading.classList.add("red");
 }
 
+// play-pause music button
+
 const button = document.querySelector("#myButton");
-button.addEventListener("click", function() {
-document.querySelector("#myAudio").play();
-})
+button.addEventListener("click", playPause);
+
+const audio = document.querySelector("#myAudio");
+
+function playPause() {
+  
+  if(audio.paused) {
+    audio.play();
+    button.classList.add("pause");
+  }
+  else if (audio.played) {
+    audio.pause();
+    button.classList.remove("pause")
+    button.classList.add("play");
+  }
+
+  else {
+    button.classList.add("play");
+  }
+
+
+}
 
 // Snow effect
 
@@ -179,8 +200,8 @@ function animation(){
     }
     else if (window.innerWidth <= 500){
       gsap.from("#title", {delay: .5, opacity: 0, y: -550, duration: 2.2})
-      gsap.from("#myButton", {delay: 2, opacity: 0, y: -550, duration: 2.2})
-     gsap.from(".christmas", {delay: 4, opacity: 0, duration: 2, stagger: .6})
+      gsap.from("#myButton", {delay: 3, opacity: 0, y: -550, duration: 2.2})
+     gsap.from(".christmas", {delay: 5, opacity: 0, duration: 2, stagger: .6})
     }
   }
   
