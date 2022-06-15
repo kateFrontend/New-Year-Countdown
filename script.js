@@ -165,23 +165,22 @@ function animation(){
     if (window.innerWidth > 1024) {
     gsap.from("#title", {delay: .5, opacity: 0, y: -550, duration: 2.2})
     gsap.from("#myButton", {delay: 2, opacity: 0, y: -550, duration: 2.2})
-    gsap.from("#pauseButton", {delay: .5, opacity: 0, x: 550, rotation: 1440, duration: 2.2})
     gsap.from(".christmas", {delay: 4, opacity: 0, duration: 2, stagger: .6})
     }
     else if (window.innerWidth <= 1024 && window.innerWidth > 800){
-      gsap.from("#playButton", {delay: .5,  opacity: 0, x: -400, rotation: -1440, duration: 2.2})
-      gsap.from("#pauseButton", {delay: .5,  opacity: 0, x: 400, rotation: 1440, duration: 2.2})
-      gsap.from(".christmas", {delay: 2.8, opacity: 0, duration: 1.2, stagger: .6})  
+      gsap.from("#title", {delay: .5, opacity: 0, y: -550, duration: 2.2})
+      gsap.from("#myButton", {delay: 2, opacity: 0, y: -550, duration: 2.2})
+     gsap.from(".christmas", {delay: 4, opacity: 0, duration: 2, stagger: .6})
     }
     else if (window.innerWidth <= 800 && window.innerWidth >500){
-      gsap.from("#playButton", {delay: .5,  opacity: 0, x: -250, rotation: -1440, duration: 2.2})
-      gsap.from("#pauseButton", {delay: .5,  opacity: 0, x: 250, rotation: 1440, duration: 2.2})
-      gsap.from(".christmas", {delay: 2.8, opacity: 0, duration: 1.2, stagger: .6})  
+      gsap.from("#title", {delay: .5, opacity: 0, y: -550, duration: 2.2})
+      gsap.from("#myButton", {delay: 2, opacity: 0, y: -550, duration: 2.2})
+     gsap.from(".christmas", {delay: 4, opacity: 0, duration: 2, stagger: .6})
     }
     else if (window.innerWidth <= 500){
-      gsap.from("#playButton", {delay: .5,  opacity: 0, x: -90, rotation: -720, duration: 2.7})
-      gsap.from("#pauseButton", {delay: .5,  opacity: 0, x: 90, rotation: 720, duration: 2.7})
-      gsap.from(".christmas", {delay: 2.8, opacity: 0, duration: 1.2, stagger: .6})  
+      gsap.from("#title", {delay: .5, opacity: 0, y: -550, duration: 2.2})
+      gsap.from("#myButton", {delay: 2, opacity: 0, y: -550, duration: 2.2})
+     gsap.from(".christmas", {delay: 4, opacity: 0, duration: 2, stagger: .6})
     }
   }
   

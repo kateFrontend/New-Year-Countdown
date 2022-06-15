@@ -16,8 +16,10 @@ body {
 
 #particles-js {
     position: absolute;
+    margin-top: -100px;    
     width: 100%;
-    height: 150%;
+    height: 100%;
+
 }
 
 .heading {
@@ -46,7 +48,7 @@ button {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 .christmas {
@@ -99,6 +101,7 @@ h3 {
     button {
         margin: 0 auto;
         width: 150px;
+        padding: 0;
     }
 
     .container {
