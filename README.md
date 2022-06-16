@@ -5,7 +5,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-<p></p>
+<p>Simple Vanilla JavaScript countdown timer with beautiful design, Gsap animation and play-pause music button.</p>
 <p></p>
 
   <p>
