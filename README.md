@@ -1,6 +1,6 @@
 <div>
   <h1>New Year Countdown</h1> 
-  <img src="" alt="New Year Countdown" width="auto">
+  <img src="cover.JPG" alt="New Year Countdown" width="auto">
 </div>
 
 <!-- ABOUT THE PROJECT -->
