@@ -19,10 +19,10 @@
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-<p></p>
-<p></p>
-<p></p>
-<p></p>
+<p>This application shows how much real time is left until Christmas.</p>
+<p>For the falling snow effect, I used JavaScript library for creating particles https://github.com/VincentGarreau/particles.js</p>
+<p>The Gsap animation adds the effect of smooth appearance of blocks.</p>
+<p>When the user clicks on the Play button, music starts playing and the image of the button changes.</p>
 
 
 Project Link: https://github.com/kateFrontend/New-Year-Countdown
